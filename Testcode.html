@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test Project</title>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/3738d6ab13.js" crossorigin="anonymous"></script>
+        <style>
+             *{
+           margin:0px;
+           padding:0px;
+           box-sizing: border-box;
+        }
+           html{
+            scroll-behavior: smooth;
+           }
+           body{ 
+            background-color: #fff;
+           
+            background-size: cover;
+        
+
+
+        }
+
+          .menu-bar{
+            background:rgba(29, 23, 23, 0.6);
+                position: fixed;
+            display: flex;
+            width:100vw;
+            justify-content: space-evenly;
+            align-items: center;
+         }
+
+
+
+
+        .menu-bar  ul {
+            display: inline-flex;
+            list-style-type: none;
+         }
+         .menu-bar ul li {
+              
+              
+               padding: 15px;
+               
+               width: 120px;
+               margin: 15px;
+               
+         }
+         .menu-bar a{
+            text-decoration-line:none;
+             color:#fff;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-size: 14px;
+         }
+        
+         .menu-bar ul li a:hover{
+
+                     color:chartreuse
+         }
+         .menu-bar ul li a:active{
+          color:yellow;
+          border-bottom: 1px solid red;
+
+         }
+        
+         .menu-bar h1{
+          color:aquamarine;
+          font-family: monospace;
+          display: inline;
+          letter-spacing: 4px;
+          font-size: 2.5em;
+          
+         }
+
+
+
+
+
+         
+           
+
+          .sub-menu{
+
+            display: none;
+          }
+
+
+         .menu-bar ul li:hover .sub-menu {
+                   position: absolute;
+                   display: block;
+                   background:rgba(29, 23, 23, 0.6);
+                   margin-top: 15px;
+                   margin-left:15px;
+                
+         }
+         .menu-bar ul li:hover .sub-menu ul {
+
+               display: block;
+               margin: 10px;
+               
+
+         }
+         .menu-bar ul li:hover .sub-menu ul li {
+
+              padding: 10px;
+              width: 150px;
+              border-bottom: 1px dotted white;
+              background:transparent;
+              text-align: left;
+
+
+
+         }
+         .menu-bar ul li:hover .sub-menu ul li:last-child {
+                    border-bottom: none;
+         }
+            
+          
+             
+
+
+
+         
+          h1 {
+               text-align:center;
+              color: aquamarine;
+            
+          }
+          
+
+
+
+    
+
+            .para6 {
+                background-color:#343a40;;
+                color:gray;
+            
+                
+                column-count: 5;
+                column-width: auto;
+                padding:20px;
+                min-height: 300px;
+            }
+            
+             
+        
+        
+         
+    
+
+        .menu1 ul li,
+        .menu2 ul li,
+        .menu3 ul li,
+        .menu4 ul li{
+              text-decoration:none;
+              padding: 5px;
+              font-family: 'Courier New', Courier, monospace;
+              font-size: medium;
+              font-display:initial;
+              color: gray;
+        }
+        .para6 a {
+            color:grey;
+            text-decoration-line: none;
+        }
+        .para6{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .adress ul{
+          list-style: none;
+
+        }
+
+      .content_section{
+        padding-top:100px;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+        width:100vw;
+        justify-content: space-evenly;
+      }
+      .form_manage{
+        display: flex;
+        flex-direction: column;
+        width:30%;
+        height:400px;
+        
+      }
+      
+    .img-container{
+        width:60%;
+        height:90%;
+    }
+
+      .img-container img{
+        width:100%;
+        height:100%;
+      }
+         
+      .name-section{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .name-section input{
+        width:95%;
+        
+      }
+      .form_manage input{
+        padding:5px;
+        margin-bottom: 3px;
+        outline:none;
+        border-radius: 2px;
+        border:0.5px solid rgb(224, 215, 215);
+      }
+      .form_manage input:hover{
+        border: 0.6px solid green;
+      }
+
+      .form_manage label{
+        margin-bottom:15px;
+
+      }
+      .form_inline{
+      
+        width:90%;
+        height:90%;
+        margin:auto;
+      }
+      .form-outline1 label{
+        display: block;
+      }
+       .form-outline1 input{
+        width:100%;
+
+       }
+       .sub_btn{
+        display: block;
+        width:70%;
+        margin:auto;
+        padding:5px;
+        margin-top:20px;
+        margin-bottom:15px;
+        border:none;
+        background: rgba(122,232,122,0.6);
+        border-radius: 5px;
+       }
+       .sub_btn:hover{
+       background: rgba(10, 238, 10, 0.6);
+        border:none;
+       }
+       .text-center{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+       }
+       .text-center p{
+        text-align: center;
+
+        
+       }
+       .text-center button{
+        background: rgba(122,232,122,0.6);
+        outline:none;
+        border:none;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        margin-top: 10px;
+        margin-right: 10px;
+
+       }
+       .text-center button:hover{
+        background: rgba(10, 238, 10, 0.6);
+       }
+
+ 
+        </style>
+    </head>
+<body>
+    <div class="menu-bar" id="menu">
+      <h1>Monosage</h1>
+        <ul>
+           <li><a href="">COMPANY</a>
+             <div class="sub-menu">
+               <ul>
+                   <li><a href="" > About</a>    </li>
+                   <li><a href="" > products</a> </li>
+                   <li><a href="" > servces</a> </li>
+                   <li><a href="" > branches</a> </li>
+                   <li><a href="" > events</a> </li>
+                   <li><a href="" > adress</a> </li>
+               </ul>
+             </div>
+          </li>
+           <li><a href="#home" >HOME</a></li>
+           <li><a href="#contact" >CONTACT</a></li>
+           
+           <li><a href="" >CAREERS</a></li>
+           <li>
+        </ul>
+       </div>
+       <section id="home" class="content_section">
+    <div class="img-container">
+     <img src="Capture.PNG" alt ="random image" />
+     </div>
+      <!-- <form class="form_manage"  onsubmit="sendEmail()"; reset(); return(false)> -->
+        <form class="form_manage" action="https://formspree.io/f/mvoybnle"  method="POST" >
+        <div class="form_inline">
+    <!--  text inputs for the first and last names -->
+         <div class="name-section">
+        <div class="form-outline">
+          <input type="text" id="firstname" name="firstname" class="form-control"  required/>
+          <label class="form-label" for="firstname">First name</label>
+        </div>
+      
+      
+        <div class="form-outline">
+          <input type="text" id="lastname"  name="lastname" class="form-control" required />
+          <label class="form-label" for="lastname">Last name</label>
+        </div>
+    </div>
+    
+    <!-- Email input -->
+       <div class="form-outline1">
+      <input type="email" id="email" name="email" class="form-control" required/>
+      <label class="form-label" for="email">Email address</label>
+    
+
+    <!-- Password input -->
+    
+      <input type="password" id="pw" name="pw" class="form-control" required />
+      <label class="form-label" for="pw">Password</label>
+    
+    </div>
+    <!-- Checkbox -->
+    
+      <input class="form-check-input me-2" name="tc" type="checkbox" value="" id="tc" checked />
+      <label class="form-check-label" for="tc">
+            Terms & Conditions 
+      </label>
+   
+
+    <!-- Submit button -->
+    <button type="submit" class="sub_btn">
+      Sign up
+    </button>
+
+    <!-- Register buttons -->
+    <div class="text-center">
+      <p>or sign up with:</p>
+      <div class="social_links">
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-google"></i>
+      </button>
+
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-twitter"></i>
+      </button>
+
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-github"></i>
+      </button>
+    </div>
+    </div>
+</div>
+  </form>
+</section>
+
+  <div   id = "contact" class="para6">
+    <div class="adress">
+    
+  <ul>
+<li>3rd floor,</li>
+<li>GMR & GS Complex</li>
+<li>Opposite Police HeadQuarters</li>
+<li>Hanmakonda,506001</li>
+</ul>
+  </div>
+ 
+  <div class="menu1">
+
+    <tr>
+        <td>
+            
+        <h2><a href=""  >COMPANY</a></h2>
+        <ul>
+            <li> <a href="" > About Us </a> </li>
+            <li>  <a href="" > Why Us </a>  </li>
+            <li>  <a href="" > Meet Our Team  </a>  </li>
+            <li>  <a href="" > Engagement Model</a>  </li>
+            <li>  <a href="" >   Technologies</a>  </li>
+        </ul>
+       </td>
+    </tr>
+  </div>
+  <div class="menu2">
+    <tr>
+  <td>   
+  <h2><a href=""  >SERVICES</a></h2>
+  <ul>
+      <li> <a href="" > UX/UI Engineering</a> </li>
+      <li>  <a href="" > Web Development  </a>  </li>
+      <li>  <a href="" >  SAAS Development Services </a>  </li>
+      <li>  <a href="" >Mobile App Development </a>  </li>
+      <li>  <a href="" > Big Data Analytics  </a>  </li>
+      <li>  <a href="" >  Cloud & DevOPS  </a>  </li>
+      <li>  <a href="" > Quality Engineering  </a>  </li>
+
+       </ul>
+  </td>
+  </tr>
+   
+    </div>
+    <div class="menu3">
+         <tr>
+            <td>
+               <h2><a href=""  >SOLUTIONS</a></h2>
+            <ul>
+                <li> <a href="" >Programming  </a> </li>
+                <li>  <a href="" > Accelerated Product Development </a>  </li>
+                <li>  <a href="" > DevOPS Automation  </a>  </li>
+                <li>  <a href="" >Prototyping & Fesibility </a>  </li>
+                <li>  <a href="" >  Application Modernization </a>  </li>
+             </ul>
+            </td>
+            </tr>
+           </div>
+      <div class="menu4">
+            <tr>
+            <td>
+                
+            <h2><a href=""  >   PORTFOLIO</a></h2>
+            <ul>
+                <li> <a href="" >  Health Care  </a> </li>
+                <li>  <a href="" >   Devices & IOT </a>  </li>
+                <li>  <a href="" >  Supply Chain  </a>  </li>
+                <li>  <a href="" > Construction </a>  </li>
+            </ul>
+            </td>
+           </tr>
+        </div>
+        </div>
+
+
+           <!-- <script src="https://smtpjs.com/v3/smtp.js">
+          function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+); 
+          }
+        </script> -->
+</body>
+
+  </html>
